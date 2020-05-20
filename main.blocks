@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="|VRYjHz2C0+kx?V:aJoW">projectile</variable><variable id=";wue[3x2Gx92|C~.Zg8{">mySprite</variable></variables><block type="gameupdate" x="0" y="0"><statement name="HANDLER"><block type="controls_if"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="percentchance"><value name="percentage"><shadow type="math_number_minmax"><mutation min="0" max="Infinity" label="Percentage" precision="0"/><field name="SLIDER">25</field></shadow></value></block></value><statement name="DO0"><block type="variables_set"><field name="VAR" id="|VRYjHz2C0+kx?V:aJoW">projectile</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromside"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . 1 . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="vx"><shadow type="spriteSpeedPicker"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker"><field name="speed">100</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">20</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">30</field></shadow></value></block></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="|VRYjHz2C0+kx?V:aJoW">projectile</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">10</field></shadow><block type="scenescreenwidth"/></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow></value><next><block type="spritesetsetflag"><field name="flag">SpriteFlag.Ghost</field><value name="sprite"><block type="variables_get"><field name="VAR" id="|VRYjHz2C0+kx?V:aJoW">projectile</field></block></value><value name="on"><shadow type="toggleOnOff"><field name="on">true</field></shadow></value></block></next></block></next></block></statement></block></statement></block></xml>
